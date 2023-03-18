@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Exercise 2</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+        #top-menu{
+            background-color: #863A6F;
+        }
+        #top-menu ul{
+            text-align:center;
+            margin: 0 auto;
+            max-width: 1024px;
+        }
+
+        ul {  
+            margin: 0;  
+            padding: 0;  
+            list-style: none; 
+            height: 50px;
+            line-height: 40px;
+            background-color: #863A6F;  
+            font-size: 12px;
+        }  
+                
+        li {  
+            display: inline-block;
+            border-right: 0px solid#ECF2FF;  
+        }  
+                
+        a {  
+            display: block;
+            padding: 10px 20px;  
+            color: #FFFFFF;  
+            font-size:18px;  
+            text-align: center;    
+            text-decoration: none;  
+        }
+        
+        a:hover{
+            background-color: #D989B5;
+            height: 30px;
+        }
+        #banner{
+            background-image: url(assets/pic1.jpg);
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 400px;
+            width: 100%;
+        
+        }
+        .banner-text{
+            position: absolute;
+            text-align: right;
+            text-shadow: 4px 4px 1px rgb(200, 193, 193);
+            right: 20%;
+            top: 150px;
+            color: rgb(69, 67, 67);
+            font-size: 1.9em;
+            margin-top: 0px;
+            text-transform: uppercase;
+            font-weight: 800;
+            line-height: 1.9em;
+        }
+        #about-me{
+            padding: 30px 10px;  
+            color: rgb(69, 67, 67);
+            font-size: 1.0em;
+            text-align: left;
+            font-weight: 400;
+            line-height: 1.9em; 
+        }
+        .flex-container{
+            display: flex;   
+            height: 300px;
+            justify-content: space-around;
+            flex-wrap: nowrap;
+            align-items: stretch;
+            padding: 10px 20px;
+        }
+
+        .flex-container h3{
+            color: rgb(69, 67, 67);
+            font-size: 1.7em;
+            margin-top: 20px;
+            text-align: left;
+            font-weight: 800;
+            line-height: 1.9em;
+
+        }
+
+        .flex-container>div{
+            padding: 0px 10px;
+            background-color: #D989B5;
+            width: 700px;
+            height: 300px;
+            margin: 10px;
+            color:#000000;
+            box-shadow: 0px 0px 5px 6px #ccc;
+            gap: 20px 5px;
+        }
+
+        #work-experience{
+            margin-top: 30x;
+            position: relative;
+            text-align: left;
+            padding: 70px;
+            font-size: 1.0em;
+            font-weight: 400; 
+            line-height: 2.0;    
+        }
+
+        #contact-me{
+            position: relative;
+            background: #FFADBC;  
+            padding: 40px; color: rgb(69, 67, 67);
+            font-size: 1.0em;
+            margin-top: 1px;
+            text-align: left;
+            font-weight: 400; 
+            line-height: 0.1;  
+        }
+        #footer{
+            background-color: #863A6F;
+        }
+
+        #footer ul{
+            text-align:center;
+            margin: 0 auto;
+            max-width: 1024px;
+            height:fit-content;
+            
+        }
+
+        h1+p{
+            font-size: 32px;
+            color: #790252;
+           
+        }
+        
+        #page-wrapper>#top-menu>.container>ul>li>a{
+            color:whitesmoke;
+        }
+
+    </style>
+
+    </head>
+    <body>
+        <div id="page-wrapper">
+            <div id="top-menu">
+                <div class="container">
+                    <ul>
+                        <li><a href="#page-wrapper">Home</a></li>
+                        <li><a href="#about-me">About Me</a></li>
+                        <li><a href="#my-portfolio">Portfolio</a></li>
+                        <li><a href="#work-experience">Experience</a></li>
+                        <li><a href="#contact-me">Contact Me</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="banner">
+                <div class="banner-text">
+                    <h1>Revelyn Resolo</h1>
+                    <p><span>Full Stack Web Developer</span></p>
+                    
+                </div>
+            </div>
+            <div id="main-content">
+                <section id="about-me">
+                    <div  class="container">
+                        <h3>About Me</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                             ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                             fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                             mollit anim id est laborum.
+                        </p>
+                        
+                    </div>
+                </section>
+                <section id="flex-content">
+                    <h3>My Portfolio</h3>
+                    <div  class="flex-container">
+                        <div style="">Project Title</br></br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                            ex ea commodo consequat.</p></div>
+                        <div style="">Project Title</br></br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                                ex ea commodo consequat. </p></div>
+                        <div style="">Project Title</br></br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                                ex ea commodo consequat. </p></div>
+                        <div style="">Project Title</br></br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                                ex ea commodo consequat.</p></div>
+                        <div style="">Project Title</br></br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                                ex ea commodo consequat. </p></div>
+                        <div style="">Project Title</br></br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                                ex ea commodo consequat. </p></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="work-experience">
+                    <div class="container">
+                        <h3>Work Experience</h3>
+                        <div class="">
+                            <div class="">
+                                <div class="">
+                                    <h4>Company</h4>
+                                    <div>Position</div>
+                                    <div class="">Date From - To</div>
+                                </div>
+                            </div>
+                            <div class=""></div> 
+                        </div>
+                        <div class="">
+                            <div class="">
+                                <div class="">
+                                    <h4>Company</h4>
+                                    <div>Position</div>
+                                    <div class="">Date From - To</div>
+                                </div>
+                            </div>
+                            <div class=""></div> 
+                        </div>
+						<div class="">
+                            <div class="">
+                                <div class="">
+                                    <h4>Company</h4>
+                                    <div>Position</div>
+                                    <div class="">Date From - To</div>
+                                </div>
+                            </div>
+                            <div class=""></div> 
+                        </div>
+						<div class="">
+                            <div class="">
+                                <div class="">
+                                    <h4>Company</h4>
+                                    <div>Position</div>
+                                    <div class="">Date From - To</div>
+                                </div>
+                            </div>
+                            <div class=""></div> 
+                        </div>
+						<div class="">
+                            <div class="">
+                                <div class="">
+                                    <h4>Company</h4>
+                                    <div>Position</div>
+                                    <div class="">Date From - To</div>
+                                </div>
+                            </div>
+                            <div class=""></div> 
+                        </div>
+                    </div>
+                </section>
+                <section id="contact-me">
+                    <div  class="container">
+                        <h3>Contact Me</h3>
+                        
+                    </div>
+                </section>
+            </div>
+            <div id="footer">
+                <div class="container">
+                    <div>
+                        Copyright 2023
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="#">LinkedIn</a>
+                            </li>
+                            <li>
+                                <a href="#">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="#">IG</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
