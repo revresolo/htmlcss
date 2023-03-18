@@ -1,0 +1,49 @@
+<html>
+    <head><title>Display CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0; 
+        }
+
+        html, body{
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        .flex-container{
+             display: flex;
+             background-color:whitesmoke;
+            margin: 20px;
+            flex-direction: row;  
+        }
+
+        .flex-container>div{
+            padding: 40px;
+            background-color:#C3B091;
+            margin: 10px;
+            color:#8a2be2;
+        }
+
+
+
+
+
+
+
+
+    </style>
+    </head>
+    <body>
+        <div id="flex-content">
+            <h2>CSS Using Flexbox</h2>
+        <div class="flex-container">
+            <div>flex-item1</div>
+            <div>flex-item2</div>
+            <div>flex-item3</div>
+            <div>flex-item4</div>
+            <div>flex-item5</div>
+            <div>flex-item6</div>
+          </div>   
+        </div>
+    </body>
+</html>
